@@ -1,0 +1,57 @@
+h1{ 
+    font-family: monaco, Consolas, "Lucida Console", monospace;
+    font-size: 95px;
+    font-style: Bolder; 
+    font-variant: normal; 
+    font-weight: 7000; 
+    line-height: 45px; 
+}
+p{
+    font-family:monospace;
+    font-size: 20px;
+}
+.small{
+    font-size: 10px;
+}
+#div1{
+    text-align: center;
+}
+.wrapper{
+    margin-top: 10%;
+}
+.wrapper h2{
+    font-family: monospace;
+    font-size: 40px;
+    text-align: center;
+}
+.team h3{
+    font-family: monospace;
+    font-size: 30px;
+}
+.team{
+    display:flex;
+    width:auto;
+    text-align:center;
+}
+.member{
+    background:aliceblue;
+    margin:5px;
+    margin-bottom:50px;
+    width:20%;
+    padding:20px;
+    line-height: 20px;
+}
+.team .role{
+    font-size: 25px;
+}
+.foot{
+    font-family: monospace;
+    font-size: 20px;
+    text-align: center;
+}
+.foot a{
+    color: rgb(255, 73, 103);
+}
+.foot a:hover{
+    color: rgb(255, 0, 128);
+}

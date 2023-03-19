@@ -1,0 +1,28 @@
+body{
+    background: linear-gradient(to bottom, #06c0fd 0%, #f654a5 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height:100%;
+}
+p{
+    text-align: center;
+}
+a:hover{
+    color:hotpink;
+}
+.div1{
+    width: 500px;
+    height: 250px;
+    margin: 15% auto 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    box-shadow: 5px 5px 5px 5px rgb(113, 115, 117);
+}
+a{
+    color:black;
+    font-size: 25px;
+    font-family:monospace;
+    text-decoration: none;
+}

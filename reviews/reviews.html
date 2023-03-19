@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" >
+    <meta content="width=device-width, initial-scale=1.0" >
+    <link rel="stylesheet" href="reviews_style.css">
+    <title>RATE US 🚹🔫</title>
+    <link rel="icon" href="PepeNoted.png">
+</head>
+<body>
+    <div class="gradient">
+        <div class="star-rating">
+            <h1>How was your experience?</h1>
+            <button class="star">&#9734;</button>
+            <button class="star">&#9734;</button>
+            <button class="star">&#9734;</button>
+            <button class="star">&#9734;</button>
+            <button class="star">&#9734;</button>
+            <p class="current_rating">0 out of 5</p>
+        </div>
+        <script>
+            const allStar= document.querySelectorAll(".star")
+            let current_rating=document.querySelector('.current_rating');
+            let n;
+            allStar.forEach((star,i)=>{
+                star.onclick = function(){
+                    let current_star_level = i+1;
+                    current_rating.innerText = `${current_star_level} out of 5`;
+                    n = current_star_level;
+
+                    allStar.forEach((star,j)=>{
+                        if(current_star_level >= j+1){
+                            star.innerHTML="&#9733";
+                        }else{
+                            star.innerHTML="&#9734";
+                        }
+            })
+        }
+    })
+            function validate(){
+                if(n>3){
+                    alert("Thank You!!!");
+                }
+                else if(n>0){
+                    alert("We'll try our best the next time you visit us.");
+                }   
+                else{
+                    alert("No stars given.");
+                }
+            }
+        </script>
+        <form onsubmit="validate()" action="reviews.html">
+        
+            <textarea name="opinion" rows="3" cols="20" placeholder="Write your opinion...we asked, we care :)"></textarea>
+            <input type="submit" value="submit">
+        </form>
+    </div>
+</body>
+</html>
